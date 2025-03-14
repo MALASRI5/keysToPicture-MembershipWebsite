@@ -1,0 +1,35 @@
+.gallery-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0; 
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin: 0; 
+}
+
+.image-large {
+  width: calc(33.33%);
+}
+
+.image-medium {
+  width: calc(33.33%); 
+  filter: grayscale(100%); 
+}
+
+@media screen and (max-width: 1024px) {
+  .image-large, .image-medium {
+    width: calc(50%); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-large, .image-medium {
+    width: calc(100%); 
+  }
+}
